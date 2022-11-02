@@ -13,3 +13,5 @@ Imports:
     dplyr,
     glue,
     stringr
+URL: https://github.com/parmsam/arrr
+BugReports: https://github.com/parmsam/arrr/issues
