@@ -5,7 +5,7 @@ Authors@R:
     person("Sam", "Parmar", , "parmartsam@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: R package to turn English into Pirate Speak.
-Inspired by arrr Python package and pirate-speak JS package 
+  Inspired by arrr Python package and pirate-speak JS package.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -13,6 +13,7 @@ RoxygenNote: 7.2.1
 Imports: 
     dplyr,
     glue,
+    magrittr,
     stringr
 URL: https://github.com/parmsam/arrr
 BugReports: https://github.com/parmsam/arrr/issues
