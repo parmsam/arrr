@@ -19,3 +19,6 @@ Imports:
     tidyr
 URL: https://github.com/parmsam/arrr
 BugReports: https://github.com/parmsam/arrr/issues
+Depends: 
+    R (>= 2.10)
+LazyData: true
