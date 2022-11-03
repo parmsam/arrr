@@ -9,9 +9,8 @@ split_to_sentence <- function(text) {
 # insert a random phrase into your vector of sentences
 insert_random_phrase <- function(split_sentences,
                                  phrases = pirate_phrases) {
-  phrases <- phrases %>%
-  rand_phrase <- pirate_phrases %>%
-    dplyr::pull() %>%
+  rand_phrase <- phrases %>%
+    dplyr::pull(phrase) %>%
     sample(1) %>%
     stringr::str_replace("^\\w", toupper)
   insert_position <- sample(1:length(split_sentences), 1)
@@ -25,6 +24,8 @@ insert_random_phrase <- function(split_sentences,
 #' @param english_sentence A string with your sentence(s) in English.
 #' @param add_random A boolean that indicates whether you want a
 #' random pirate phrase added into your pirate speak.
+#' There is about a 1/5 chance of random pirate phrase being added
+#' with this option. The default value of `add_random` is TRUE.
 #' @return A string with your sentences in pirate speak.
 #' @examples
 #' ## basic example code
@@ -75,7 +76,9 @@ translate <- function(english_sentence, add_random = TRUE) {
   # 1/5 chance of a pirate phrase insert
   if (add_random == TRUE) {
     if (sample(0:5, 1) == 0) {
-      pirate_english <- insert_random_phrase(pirate_english) %>%
+      pirate_english <- pirate_english %>%
+        split_to_sentence() %>%
+        insert_random_phrase(phrases = pirate_phrases) %>%
         stringr::str_c(collapse = " ")
     }
   }

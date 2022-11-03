@@ -7,6 +7,8 @@
 #'}
 #' @source \url{https://github.com/ntoll/arrr/blob/master/arrr.py}
 #' @source \url{https://github.com/mikewesthad/pirate-speak/blob/master/lib/pirate-speak.js}
+#' @examples
+#' pirate_lookup
 "pirate_lookup"
 
 #' @title Pirate Phrases
@@ -16,4 +18,6 @@
 #'   \item{\code{phrase}}{character phrase in pirate speak}
 #'}
 #' @source \url{https://github.com/ntoll/arrr/blob/master/arrr.py}
+#' @examples
+#' pirate_phrases
 "pirate_phrases"

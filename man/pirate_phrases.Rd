@@ -19,4 +19,7 @@ pirate_phrases
 \description{
 Collection of phrases that a pirate might randomly say.
 }
+\examples{
+pirate_phrases
+}
 \keyword{datasets}

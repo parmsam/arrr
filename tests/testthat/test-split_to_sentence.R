@@ -1,0 +1,10 @@
+test_that("split_to_sentence returns character vector", {
+  test_result1 <- split_to_sentence("Okay, what is this? I think I understand!")
+  expect_length(test_result1, 2)
+  expect_type(test_result1[1], "character")
+  expect_error(split_to_sentence())
+  test_result2 <- split_to_sentence("Let's try this now!")
+  expect_length(test_result2, 1)
+  test_result3 <- split_to_sentence("Last one. Okay, how about this? Is it working?")
+  expect_length(test_result3, 3)
+})

@@ -22,4 +22,7 @@ pirate_lookup
 \description{
 This lookup table maps English to pirate speak.
 }
+\examples{
+pirate_lookup
+}
 \keyword{datasets}

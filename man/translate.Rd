@@ -10,7 +10,9 @@ translate(english_sentence, add_random = TRUE)
 \item{english_sentence}{A string with your sentence(s) in English.}
 
 \item{add_random}{A boolean that indicates whether you want a
-random pirate phrase added into your pirate speak.}
+random pirate phrase added into your pirate speak.
+There is about a 1/5 chance of random pirate phrase being added
+with this option. The default value of \code{add_random} is TRUE.}
 }
 \value{
 A string with your sentences in pirate speak.
