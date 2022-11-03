@@ -35,7 +35,7 @@ translate(
   So, Annie are you ok? 
   Are you ok, Annie?"
 )
-#> [1] "Annie, be ye ok? So, annie be ye ok? Be ye ok, annie?"
+#> [1] "Annie, be ye ok? So, Annie be ye ok? Be ye ok, Annie?"
 
 # Okay, last one. What about Pirate Drake? 
 translate(
@@ -55,3 +55,7 @@ app](https://connect.thinkr.fr/hexmake/) from
 
 <a href="https://www.flaticon.com/free-icons/pirate" title="pirate icons">Pirate
 icons created by Freepik - Flaticon</a>
+
+Inspired by and data from [pirate-speak in
+JS](https://github.com/mikewesthad/pirate-speak) and [arrr in
+Python](https://github.com/ntoll/arrr).

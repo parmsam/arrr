@@ -63,3 +63,5 @@ app](https://connect.thinkr.fr/hexmake/) from
 [ColinFay](https://github.com/ColinFay/hexmake).
 
 <a href="https://www.flaticon.com/free-icons/pirate" title="pirate icons">Pirate icons created by Freepik - Flaticon</a>
+
+Inspired by and data from [pirate-speak in JS](https://github.com/mikewesthad/pirate-speak) and [arrr in Python](https://github.com/ntoll/arrr).

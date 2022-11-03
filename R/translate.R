@@ -253,16 +253,21 @@ insert_random_phrase <- function(split_sentences,
 translate <- function(english_sentence, add_random = TRUE) {
   # split and lowercase words in sentence
   split_words <- english_sentence %>%
-    stringr::str_to_lower() %>%
     stringr::str_split("\\s+|(?=[.!?:,])") %>%
     .[[1]]
 
   # create a tibble with sentence words
   # join it with the pirate words lookup table
   pirate_table <- tibble::tibble(orig = split_words) %>%
-    mutate(row = dplyr::row_number(), .before = orig) %>%
-    dplyr::left_join(pirate_lookup, by = "orig") %>%
-    dplyr::mutate(new = ifelse(is.na(new), orig, new)) %>%
+    dplyr::mutate(lower = stringr::str_to_lower(orig)) %>%
+    dplyr::mutate(case_change = orig != lower) %>%
+    dplyr::mutate(row = dplyr::row_number(), .before = orig) %>%
+    # join on pirate word lookup table
+    dplyr::left_join(pirate_lookup, by = c("lower"="orig")) %>%
+    # see if merge gave us a pirate word
+    dplyr::mutate(in_lookup_table = ifelse(is.na(new), FALSE, TRUE)) %>%
+    # if word is not in lookup table then just replace it with original word
+    dplyr::mutate(new = ifelse(in_lookup_table == FALSE, orig, new)) %>%
     tidyr::nest(data = new) %>%
     dplyr::mutate(data = purrr::map(data, dplyr::sample_n, size = 1)) %>%
     tidyr::unnest(data)
