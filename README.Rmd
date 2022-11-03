@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of arrr is to turn English into Pirate Speak.
+The goal of arrr is to turn English into Pirate Speak for Arrr 😄.
 
 ## Installation
 

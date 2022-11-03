@@ -6,7 +6,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of arrr is to turn English into Pirate Speak.
+The goal of arrr is to turn English into Pirate Speak for Arrr 😄.
 
 ## Installation
 
@@ -27,7 +27,7 @@ library(arrr)
 
 # Let's see what Pirate Gump would say?
 translate("Mama always said life was like a box of chocolates. You never know what you\'re gonna get.")
-#> [1] "Mama always said life be like a barrel o' chocolates. Ye nary know what you be gonna get. Savvy?"
+#> [1] "Mama always said life be like a barrel o' chocolates. Ye nary know what you be gonna get."
 
 # How about Pirate Michael?
 translate(
@@ -44,7 +44,7 @@ translate(
   Yeah 
   You used to call me on my cell phone"
 )
-#> [1] "Ye used t' call me on me ye used t', ye used t' aye ye used t' call me on me cell phone Weigh anchor and hoist the mizzen!"
+#> [1] "Ye used t' call me on me ye used t', ye used t' aye ye used t' call me on me cell phone"
 ```
 
 ## Credit
