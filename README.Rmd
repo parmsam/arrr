@@ -66,3 +66,7 @@ app](https://connect.thinkr.fr/hexmake/) from
 <a href="https://www.flaticon.com/free-icons/pirate" title="pirate icons">Pirate icons created by Freepik - Flaticon</a>
 
 Inspired by and data from [pirate-speak in JS](https://github.com/mikewesthad/pirate-speak) and [arrr in Python](https://github.com/ntoll/arrr).
+
+## Code of Conduct
+
+Please note that the arrr project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
