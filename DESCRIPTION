@@ -11,9 +11,11 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
 Imports: 
-    dplyr,
-    glue,
-    magrittr,
-    stringr
+    dplyr (>= 1.0.9),
+    magrittr (>= 2.0.3),
+    purrr,
+    stringr (>= 1.4.1),
+    tibble,
+    tidyr
 URL: https://github.com/parmsam/arrr
 BugReports: https://github.com/parmsam/arrr/issues

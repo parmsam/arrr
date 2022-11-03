@@ -34,8 +34,26 @@ devtools::install_github("parmsam/arrr")
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-# library(arrr)
+library(arrr)
 ## basic example code
+
+# Let's see what Pirate Gump would say?
+translate("Mama always said life was like a box of chocolates. You never know what you\'re gonna get.")
+
+# How about Pirate Michael?
+translate(
+  "Annie, are you ok? 
+  So, Annie are you ok? 
+  Are you ok, Annie?"
+)
+
+# Okay, last one. What about Pirate Drake? 
+translate(
+  "You used to call me on my
+  You used to, you used to 
+  Yeah 
+  You used to call me on my cell phone"
+)
 ```
 
 ## Credit
