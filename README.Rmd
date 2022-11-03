@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # arrr <img src="man/figures/logo.png" align="right" height="120" />    
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/parmsam/arrr/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/parmsam/arrr/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of arrr is to turn English into Pirate Speak for Arrr.
