@@ -1,4 +1,12 @@
-# split text into sentences
+#' @title Split text into sentences
+#' @description `split_to_sentence()` splits a text into a vector of sentences
+#' @param text input text with sentences
+#' @return vector of split sentences
+#' @details uses regex lookbehind to see if there is punctuation before split
+#' @examples
+#' split_to_sentence("Okay, here's sentence 1. Here's another.")
+#' @export
+#' @importFrom stringr str_split
 split_to_sentence <- function(text) {
   sentences <- text %>%
     stringr::str_split("(?<=[.!?:])[[:space:]]+") %>%
@@ -6,7 +14,17 @@ split_to_sentence <- function(text) {
   return(sentences)
 }
 
-# insert a random phrase into your vector of sentences
+#' @title Insert a random phrase into your vector of sentences
+#' @description inserts random phrase
+#' @param split_sentences vector of individual sentences
+#' @param phrases tibble of phrases with a phrase column
+#'  Default: pirate_phrases
+#' @return vector of sentences with a random phrase inserted at some position
+#' @examples
+#' insert_random_phrase(c("Okay here's sentence 1.", "Here's sentence two"))
+#' @export
+#' @importFrom dplyr pull
+#' @importFrom stringr str_replace
 insert_random_phrase <- function(split_sentences,
                                  phrases = pirate_phrases) {
   rand_phrase <- phrases %>%
